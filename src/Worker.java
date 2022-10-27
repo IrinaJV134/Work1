@@ -1,17 +1,8 @@
 public class Worker {
 
-
-    public interface OnTaskDoneListener {
-        void onDone(String result);
-    }
-
-
-    public interface OnTaskErrorListener {
-        void onError(String result);
-    }
-
     private OnTaskDoneListener callback;
     private OnTaskErrorListener errorCallback;
+
 
     public Worker(OnTaskDoneListener callback, OnTaskErrorListener errorCallback) {
         this.callback = callback;
